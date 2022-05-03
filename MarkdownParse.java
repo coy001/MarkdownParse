@@ -46,7 +46,7 @@ public class MarkdownParse {
                 else parenCheck=0;
                 if(parenCheck==0&&bracketCheck==0)break;
             }
-            if(!markdown.get(openBracket-1).equals("!"))
+            if(!markdown[openBracket-1].equals("!"))
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
         }
