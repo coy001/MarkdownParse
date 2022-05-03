@@ -1,5 +1,5 @@
 # title
 
-![link](page().com)
+[link](page().com)
 
 more text here
