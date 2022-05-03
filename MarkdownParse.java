@@ -37,7 +37,7 @@ public class MarkdownParse {
                     parenCheck=1;
                     closeParen=closeParenCheck;
                 }
-                else parenCheck=0
+                else parenCheck=0;
                 if(parenCheck==0&&bracketCheck==0)break;
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
