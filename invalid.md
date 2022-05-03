@@ -1,5 +1,5 @@
 # title
 
-![link](good().com)
+![link](page().com)
 
 more text here
