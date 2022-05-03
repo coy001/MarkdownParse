@@ -55,10 +55,11 @@ public class MarkdownParse {
 
 
     public static void main(String[] args) throws IOException {
-        if(args.length<=0)return;
         Path fileName = Path.of(args[0]);
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
+        if(links.length!=0)
 	    System.out.println(links);
+        else System.out.println("It is empty");
     }
 }
