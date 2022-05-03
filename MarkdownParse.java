@@ -33,7 +33,7 @@ public class MarkdownParse {
                 else bracketCheck=0;
                 int openParenCheck= markdown.indexOf("(", closeParen);
                 int closeParenCheck= markdown.indexOf(")", closeParen);
-                if(openParenCheck>closeParenCheck||(openParenCheck==-1&&closeParen!=-1)){
+                if(openParenCheck>closeParenCheck||(openParenCheck==-1&&closeParenCheck!=-1)){
                     parenCheck=1;
                     closeParen=closeParenCheck;
                 }
