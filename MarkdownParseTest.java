@@ -22,7 +22,7 @@ public class MarkdownParseTest {
         Path fileName = Path.of("Snipped2.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
-        List<String> expected = List.of("b.com");
+        List<String> expected = List.of("b.com", "example.com");
         assertEquals(expected, links);      
     }
 
