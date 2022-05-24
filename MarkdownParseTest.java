@@ -9,12 +9,13 @@ import java.util.List;
 public class MarkdownParseTest {
 
     @Test
-    public void snippedOneTest() throws IOException { 
+    public void snippedOneTest throws() IOException{ 
         Path fileName = Path.of("Snipped1.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
         List<String> expected = List.of("url.com");
         assertEquals(expected, links);
+    }
 
     @Test
     public void snippedTwoTest() throws IOException{
